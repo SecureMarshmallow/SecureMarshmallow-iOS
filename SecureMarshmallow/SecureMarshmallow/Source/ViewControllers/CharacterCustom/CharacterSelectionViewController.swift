@@ -11,7 +11,7 @@ import SnapKit
 import RxCocoa
 import RxSwift
 
-class CharacterSelectionViewController: ViewController {
+class CharacterSelectionViewController: UIViewController {
     
     static var userEmoji: String = ""
     static var userBackground = UIColor()
