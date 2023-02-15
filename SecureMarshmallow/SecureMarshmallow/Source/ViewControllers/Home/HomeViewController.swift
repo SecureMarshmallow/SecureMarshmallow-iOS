@@ -49,6 +49,8 @@ class HomeViewController: BaseVC {
     
     
     override func attribute() {
+        
+        collectionView.dataSource = nil
         collectionView.delegate = self
         
         let data = Observable<[String]>.of(self.array)

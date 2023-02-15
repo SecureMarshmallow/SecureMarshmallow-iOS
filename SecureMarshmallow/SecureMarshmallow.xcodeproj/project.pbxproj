@@ -36,6 +36,7 @@
 		0ED3CFFF299CC995007E3A2F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3CFFE299CC995007E3A2F /* HomeViewController.swift */; };
 		0ED3D001299CC99C007E3A2F /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D000299CC99C007E3A2F /* BaseVC.swift */; };
 		0ED3D003299CD999007E3A2F /* BlurCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D002299CD999007E3A2F /* BlurCell.swift */; };
+		0ED3D006299CE67E007E3A2F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D005299CE67E007E3A2F /* UserViewController.swift */; };
 		AABAAA6B75BCCD66681B94BC /* Pods_SecureMarshmallow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6864075AA28248AA0A7FF9 /* Pods_SecureMarshmallow.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		0ED3CFFE299CC995007E3A2F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0ED3D000299CC99C007E3A2F /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		0ED3D002299CD999007E3A2F /* BlurCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurCell.swift; sourceTree = "<group>"; };
+		0ED3D005299CE67E007E3A2F /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		39C9BCDA191053BEE21788B0 /* Pods-SecureMarshmallow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMarshmallow.release.xcconfig"; path = "Target Support Files/Pods-SecureMarshmallow/Pods-SecureMarshmallow.release.xcconfig"; sourceTree = "<group>"; };
 		57D3FD8905F462A788D2F5C3 /* Pods-SecureMarshmallow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMarshmallow.debug.xcconfig"; path = "Target Support Files/Pods-SecureMarshmallow/Pods-SecureMarshmallow.debug.xcconfig"; sourceTree = "<group>"; };
 		EB6864075AA28248AA0A7FF9 /* Pods_SecureMarshmallow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureMarshmallow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,6 +153,7 @@
 		0E25F9AB298A8EB2008D2DE4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0ED3D004299CE674007E3A2F /* user */,
 				0ED3CFFD299CC988007E3A2F /* Home */,
 				0EA0A57F29938C1700652588 /* Passwords */,
 				0E25F9AF298B879A008D2DE4 /* Setting */,
@@ -304,6 +307,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		0ED3D004299CE674007E3A2F /* user */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3D005299CE67E007E3A2F /* UserViewController.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
 		2CD705D247E5FE54B0282A28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +463,7 @@
 				0E2C29D22967E75800305639 /* SecureMarshmallow.xcdatamodeld in Sources */,
 				0E4C5CC3296D4ECC000878DF /* UIColor+Extension.swift in Sources */,
 				0E25F9B1298B89A1008D2DE4 /* SettingViewController.swift in Sources */,
+				0ED3D006299CE67E007E3A2F /* UserViewController.swift in Sources */,
 				0E25F9B7298BAF06008D2DE4 /* SettingPresenter.swift in Sources */,
 				0E25F9A3298A80FB008D2DE4 /* ErrorPresenter.swift in Sources */,
 				0E2C29CC2967E75800305639 /* ErrorViewController.swift in Sources */,
