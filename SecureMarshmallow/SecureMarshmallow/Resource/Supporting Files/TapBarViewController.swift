@@ -11,7 +11,7 @@ import SnapKit
 
 class TapBarViewController: UITabBarController {
     private lazy var homeViewController: UINavigationController = {
-        let viewController = ErrorViewController()
+        let viewController = HomeViewController()
         let tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house.fill"), tag: 0)
         viewController.tabBarItem = tabBarItem
         let navigationView = UINavigationController(rootViewController: viewController)
