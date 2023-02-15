@@ -26,13 +26,14 @@
 		0E4D5A21296B8DDA00265762 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D5A20296B8DDA00265762 /* Int+Extension.swift */; };
 		0E813512298D3A4000BFC20E /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E813511298D3A4000BFC20E /* BaseNC.swift */; };
 		0E813514298D3B7400BFC20E /* IdInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E813513298D3B7400BFC20E /* IdInformationViewController.swift */; };
-		0EA0A561299106C000652588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A560299106C000652588 /* ViewController.swift */; };
 		0EA0A5632991137D00652588 /* CharacterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A5622991137D00652588 /* CharacterSelectionViewController.swift */; };
 		0EA0A56B2991234100652588 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A56A2991234100652588 /* RadioButton.swift */; };
 		0EA0A56D2991234B00652588 /* CharacterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A56C2991234B00652588 /* CharacterCollectionCell.swift */; };
 		0EA0A57929924AB500652588 /* CompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A57829924AB500652588 /* CompleteViewController.swift */; };
 		0EA0A58129938C7F00652588 /* NumberPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A58029938C7F00652588 /* NumberPasswordViewController.swift */; };
 		0EA0A5832993931300652588 /* NumberPasswordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A5822993931300652588 /* NumberPasswordCollectionViewCell.swift */; };
+		0ED3CFF8299CBEFD007E3A2F /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3CFF7299CBEFD007E3A2F /* TapBarViewController.swift */; };
+		AABAAA6B75BCCD66681B94BC /* Pods_SecureMarshmallow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6864075AA28248AA0A7FF9 /* Pods_SecureMarshmallow.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,15 +58,16 @@
 		0E4D5A20296B8DDA00265762 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		0E813511298D3A4000BFC20E /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
 		0E813513298D3B7400BFC20E /* IdInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdInformationViewController.swift; sourceTree = "<group>"; };
-		0EA0A560299106C000652588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0EA0A5622991137D00652588 /* CharacterSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewController.swift; sourceTree = "<group>"; };
 		0EA0A56A2991234100652588 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		0EA0A56C2991234B00652588 /* CharacterCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionCell.swift; sourceTree = "<group>"; };
 		0EA0A57829924AB500652588 /* CompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteViewController.swift; sourceTree = "<group>"; };
 		0EA0A58029938C7F00652588 /* NumberPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPasswordViewController.swift; sourceTree = "<group>"; };
 		0EA0A5822993931300652588 /* NumberPasswordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPasswordCollectionViewCell.swift; sourceTree = "<group>"; };
+		0ED3CFF7299CBEFD007E3A2F /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
 		39C9BCDA191053BEE21788B0 /* Pods-SecureMarshmallow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMarshmallow.release.xcconfig"; path = "Target Support Files/Pods-SecureMarshmallow/Pods-SecureMarshmallow.release.xcconfig"; sourceTree = "<group>"; };
 		57D3FD8905F462A788D2F5C3 /* Pods-SecureMarshmallow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMarshmallow.debug.xcconfig"; path = "Target Support Files/Pods-SecureMarshmallow/Pods-SecureMarshmallow.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6864075AA28248AA0A7FF9 /* Pods_SecureMarshmallow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureMarshmallow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AABAAA6B75BCCD66681B94BC /* Pods_SecureMarshmallow.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +100,7 @@
 				0E25F9A9298A8E6A008D2DE4 /* CoreData */,
 				0E2C29C72967E75800305639 /* AppDelegate.swift */,
 				0E2C29C92967E75800305639 /* SceneDelegate.swift */,
+				0ED3CFF7299CBEFD007E3A2F /* TapBarViewController.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -234,7 +238,6 @@
 			isa = PBXGroup;
 			children = (
 				0E25F9B0298B89A1008D2DE4 /* SettingViewController.swift */,
-				0EA0A560299106C000652588 /* ViewController.swift */,
 				0E25F9B6298BAF06008D2DE4 /* SettingPresenter.swift */,
 				0E25F9B2298B8C98008D2DE4 /* SettingTableViewCell.swift */,
 			);
@@ -287,6 +290,7 @@
 		2CD705D247E5FE54B0282A28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB6864075AA28248AA0A7FF9 /* Pods_SecureMarshmallow.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -434,9 +438,9 @@
 				0E2C29CC2967E75800305639 /* ErrorViewController.swift in Sources */,
 				0EA0A5832993931300652588 /* NumberPasswordCollectionViewCell.swift in Sources */,
 				0EA0A56D2991234B00652588 /* CharacterCollectionCell.swift in Sources */,
+				0ED3CFF8299CBEFD007E3A2F /* TapBarViewController.swift in Sources */,
 				0E2C29C82967E75800305639 /* AppDelegate.swift in Sources */,
 				0E813514298D3B7400BFC20E /* IdInformationViewController.swift in Sources */,
-				0EA0A561299106C000652588 /* ViewController.swift in Sources */,
 				0E2C29CA2967E75800305639 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
