@@ -15,6 +15,7 @@ class TapBarViewController: UITabBarController {
         let tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house.fill"), tag: 0)
         viewController.tabBarItem = tabBarItem
         let navigationView = UINavigationController(rootViewController: viewController)
+        tabBar.tintColor = .red
         return navigationView
     }()
     
@@ -35,8 +36,8 @@ class TapBarViewController: UITabBarController {
     }()
     
     private lazy var userViewController: UIViewController = {
-        let viewController = UIViewController()
-        let tabBarItem = UITabBarItem(title: "유저", image: UIImage(systemName: "person.fill"), tag: 3)
+        let viewController = UserViewController()
+        let tabBarItem = UITabBarItem(title: "유저", image: UIImage(named: ""), tag: 3)
         viewController.tabBarItem = tabBarItem
         let navigationView = UINavigationController(rootViewController: viewController)
         return navigationView
@@ -50,6 +51,7 @@ class TapBarViewController: UITabBarController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
         var tabFrame = self.tabBar.frame
         tabFrame.size.height = 90
         tabFrame.origin.y = self.view.frame.size.height - 90
@@ -64,7 +66,31 @@ extension UITabBarController {
         self.tabBar.layer.cornerRadius = 20
         self.tabBar.layer.masksToBounds = true
         self.tabBar.layer.backgroundColor = UIColor.systemBackground.cgColor
-        self.tabBar.layer.borderWidth = 0.4
+        //        self.tabBar.layer.borderWidth = 0.4
     }
+}
+
+extension UITabBarController {
     
+    func addSubviewToLastTabItem(_ imageName: String) {
+        if let lastTabBarButton = self.tabBar.subviews.last, let tabItemImageView = lastTabBarButton.subviews.first {
+            if let accountTabBarItem = self.tabBar.items?.last {
+                accountTabBarItem.selectedImage = nil
+                accountTabBarItem.image = nil
+            }
+            let imgView = UIImageView()
+            imgView.frame = tabItemImageView.frame
+            imgView.layer.cornerRadius = tabItemImageView.frame.height/3
+            imgView.layer.masksToBounds = true
+            imgView.contentMode = .scaleAspectFill
+            imgView.clipsToBounds = true
+            imgView.image = UIImage(named: imageName)
+            
+            imgView.snp.makeConstraints {
+                $0.height.width.equalTo(40.0)
+            }
+            
+            self.tabBar.subviews.last?.addSubview(imgView)
+        }
+    }
 }
