@@ -20,7 +20,7 @@ class TapBarViewController: UITabBarController {
     }()
     
     private lazy var passwordViewController: UIViewController = {
-        let viewController = UIViewController()
+        let viewController = SecretViewController()
         let tabBarItem = UITabBarItem(title: "비밀", image: UIImage(systemName: "lock.fill"), tag: 1)
         viewController.tabBarItem = tabBarItem
         let navigationView = UINavigationController(rootViewController: viewController)

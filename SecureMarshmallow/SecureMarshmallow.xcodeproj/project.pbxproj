@@ -39,6 +39,8 @@
 		0ED3D006299CE67E007E3A2F /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D005299CE67E007E3A2F /* UserViewController.swift */; };
 		0ED3D008299DEF21007E3A2F /* SecretViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D007299DEF21007E3A2F /* SecretViewController.swift */; };
 		0ED3D00E299DF721007E3A2F /* AddSecretViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D00D299DF721007E3A2F /* AddSecretViewController.swift */; };
+		0ED3D010299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D00F299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift */; };
+		0ED3D014299E1B93007E3A2F /* SecretCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D013299E1B93007E3A2F /* SecretCollectionViewCell.swift */; };
 		AABAAA6B75BCCD66681B94BC /* Pods_SecureMarshmallow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6864075AA28248AA0A7FF9 /* Pods_SecureMarshmallow.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		0ED3D005299CE67E007E3A2F /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		0ED3D007299DEF21007E3A2F /* SecretViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretViewController.swift; sourceTree = "<group>"; };
 		0ED3D00D299DF721007E3A2F /* AddSecretViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSecretViewController.swift; sourceTree = "<group>"; };
+		0ED3D00F299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSecretCollectionViewCell.swift; sourceTree = "<group>"; };
+		0ED3D013299E1B93007E3A2F /* SecretCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretCollectionViewCell.swift; sourceTree = "<group>"; };
 		39C9BCDA191053BEE21788B0 /* Pods-SecureMarshmallow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMarshmallow.release.xcconfig"; path = "Target Support Files/Pods-SecureMarshmallow/Pods-SecureMarshmallow.release.xcconfig"; sourceTree = "<group>"; };
 		57D3FD8905F462A788D2F5C3 /* Pods-SecureMarshmallow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMarshmallow.debug.xcconfig"; path = "Target Support Files/Pods-SecureMarshmallow/Pods-SecureMarshmallow.debug.xcconfig"; sourceTree = "<group>"; };
 		EB6864075AA28248AA0A7FF9 /* Pods_SecureMarshmallow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureMarshmallow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				0ED3D007299DEF21007E3A2F /* SecretViewController.swift */,
+				0ED3D013299E1B93007E3A2F /* SecretCollectionViewCell.swift */,
 				0ED3D00D299DF721007E3A2F /* AddSecretViewController.swift */,
+				0ED3D00F299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift */,
 				0EA0A57D29938B0A00652588 /* Custom */,
 				0E813510298D3A3500BFC20E /* Base */,
 				0E25F9AB298A8EB2008D2DE4 /* ViewControllers */,
@@ -464,6 +470,7 @@
 				0ED3D003299CD999007E3A2F /* BlurCell.swift in Sources */,
 				0E4D5A21296B8DDA00265762 /* Int+Extension.swift in Sources */,
 				0ED3CFFF299CC995007E3A2F /* HomeViewController.swift in Sources */,
+				0ED3D010299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift in Sources */,
 				0EA0A5632991137D00652588 /* CharacterSelectionViewController.swift in Sources */,
 				0EA0A56B2991234100652588 /* RadioButton.swift in Sources */,
 				0E813512298D3A4000BFC20E /* BaseNC.swift in Sources */,
@@ -483,6 +490,7 @@
 				0ED3CFF8299CBEFD007E3A2F /* TapBarViewController.swift in Sources */,
 				0E2C29C82967E75800305639 /* AppDelegate.swift in Sources */,
 				0E813514298D3B7400BFC20E /* IdInformationViewController.swift in Sources */,
+				0ED3D014299E1B93007E3A2F /* SecretCollectionViewCell.swift in Sources */,
 				0E2C29CA2967E75800305639 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
