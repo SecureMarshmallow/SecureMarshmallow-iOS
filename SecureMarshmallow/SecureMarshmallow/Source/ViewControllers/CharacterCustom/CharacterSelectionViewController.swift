@@ -100,6 +100,7 @@ class CharacterSelectionViewController: UIViewController {
         layout()
         
         collectionView.delegate = self
+        collectionView.dataSource = nil
         
         let data = Observable<[String]>.of(self.array)
         
