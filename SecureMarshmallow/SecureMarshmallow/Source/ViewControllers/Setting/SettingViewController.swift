@@ -59,6 +59,10 @@ final class SettingViewController: UIViewController {
         tableView.frame = view.bounds
     }
     
+    override func viewDidLayoutSubviews() {
+        tabBarController?.addSubviewToLastTabItem("TemporaryProfile")
+    }
+    
     func configure() {
         //스위치 관련
 //        models.append(Section(title: "", options: [

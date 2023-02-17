@@ -129,9 +129,6 @@ class SecretViewController: BaseVC {
 extension SecretViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemSpacing : CGFloat = 10
-        
-        let width : CGFloat = (collectionView.bounds.width - 65 - itemSpacing * 2) / 3
         
         return CGSize(width: 400, height: 50)
     }

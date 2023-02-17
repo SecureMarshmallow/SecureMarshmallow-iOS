@@ -16,7 +16,7 @@ class AddSecretViewController: BaseVC {
     
     let sectionInsets = UIEdgeInsets(top: 5, left: 25, bottom: 5, right: 25)
     var array = ["0","1","2","3","4","5","6","7","8"]
-    
+
     private lazy var itemTitle = UILabel().then {
         $0.text = "항목을 선택해주세요"
         $0.font = .systemFont(ofSize: 20, weight: .regular)
@@ -123,6 +123,11 @@ extension AddSecretViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
+        
+        let viewController = UINavigationController(rootViewController: AddPasswordViewController())
+                viewController.modalPresentationStyle = .fullScreen
+                self.present(viewController, animated: false)
+        
     }
 }
 

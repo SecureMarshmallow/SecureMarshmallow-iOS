@@ -41,6 +41,7 @@
 		0ED3D00E299DF721007E3A2F /* AddSecretViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D00D299DF721007E3A2F /* AddSecretViewController.swift */; };
 		0ED3D010299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D00F299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift */; };
 		0ED3D014299E1B93007E3A2F /* SecretCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D013299E1B93007E3A2F /* SecretCollectionViewCell.swift */; };
+		0ED3D018299F9966007E3A2F /* AddPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D017299F9966007E3A2F /* AddPasswordViewController.swift */; };
 		AABAAA6B75BCCD66681B94BC /* Pods_SecureMarshmallow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6864075AA28248AA0A7FF9 /* Pods_SecureMarshmallow.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		0ED3D00D299DF721007E3A2F /* AddSecretViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSecretViewController.swift; sourceTree = "<group>"; };
 		0ED3D00F299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSecretCollectionViewCell.swift; sourceTree = "<group>"; };
 		0ED3D013299E1B93007E3A2F /* SecretCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretCollectionViewCell.swift; sourceTree = "<group>"; };
+		0ED3D017299F9966007E3A2F /* AddPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPasswordViewController.swift; sourceTree = "<group>"; };
 		39C9BCDA191053BEE21788B0 /* Pods-SecureMarshmallow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMarshmallow.release.xcconfig"; path = "Target Support Files/Pods-SecureMarshmallow/Pods-SecureMarshmallow.release.xcconfig"; sourceTree = "<group>"; };
 		57D3FD8905F462A788D2F5C3 /* Pods-SecureMarshmallow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SecureMarshmallow.debug.xcconfig"; path = "Target Support Files/Pods-SecureMarshmallow/Pods-SecureMarshmallow.debug.xcconfig"; sourceTree = "<group>"; };
 		EB6864075AA28248AA0A7FF9 /* Pods_SecureMarshmallow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SecureMarshmallow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,10 +151,6 @@
 		0E25F9AA298A8E7F008D2DE4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				0ED3D007299DEF21007E3A2F /* SecretViewController.swift */,
-				0ED3D013299E1B93007E3A2F /* SecretCollectionViewCell.swift */,
-				0ED3D00D299DF721007E3A2F /* AddSecretViewController.swift */,
-				0ED3D00F299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift */,
 				0EA0A57D29938B0A00652588 /* Custom */,
 				0E813510298D3A3500BFC20E /* Base */,
 				0E25F9AB298A8EB2008D2DE4 /* ViewControllers */,
@@ -165,6 +163,7 @@
 		0E25F9AB298A8EB2008D2DE4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0ED3D015299E20B4007E3A2F /* Secret */,
 				0ED3D004299CE674007E3A2F /* user */,
 				0ED3CFFD299CC988007E3A2F /* Home */,
 				0EA0A57F29938C1700652588 /* Passwords */,
@@ -327,6 +326,26 @@
 			path = user;
 			sourceTree = "<group>";
 		};
+		0ED3D015299E20B4007E3A2F /* Secret */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3D007299DEF21007E3A2F /* SecretViewController.swift */,
+				0ED3D013299E1B93007E3A2F /* SecretCollectionViewCell.swift */,
+				0ED3D00D299DF721007E3A2F /* AddSecretViewController.swift */,
+				0ED3D00F299DFBAB007E3A2F /* AddSecretCollectionViewCell.swift */,
+				0ED3D016299F9938007E3A2F /* AddType */,
+			);
+			path = Secret;
+			sourceTree = "<group>";
+		};
+		0ED3D016299F9938007E3A2F /* AddType */ = {
+			isa = PBXGroup;
+			children = (
+				0ED3D017299F9966007E3A2F /* AddPasswordViewController.swift */,
+			);
+			path = AddType;
+			sourceTree = "<group>";
+		};
 		2CD705D247E5FE54B0282A28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -464,6 +483,7 @@
 			files = (
 				0E25F9B3298B8C98008D2DE4 /* SettingTableViewCell.swift in Sources */,
 				0EA0A58129938C7F00652588 /* NumberPasswordViewController.swift in Sources */,
+				0ED3D018299F9966007E3A2F /* AddPasswordViewController.swift in Sources */,
 				0E25F9B5298B9C78008D2DE4 /* SwitchTableViewCell.swift in Sources */,
 				0E25F9AE298A8F0F008D2DE4 /* StoryViewController.swift in Sources */,
 				0E4D5A1F296B8DAB00265762 /* TimeInterval+Extension.swift in Sources */,

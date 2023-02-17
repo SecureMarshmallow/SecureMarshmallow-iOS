@@ -36,7 +36,7 @@ class TapBarViewController: UITabBarController {
     }()
     
     private lazy var userViewController: UIViewController = {
-        let viewController = UserViewController()
+        let viewController = SettingViewController()
         let tabBarItem = UITabBarItem(title: "유저", image: UIImage(named: ""), tag: 3)
         viewController.tabBarItem = tabBarItem
         let navigationView = UINavigationController(rootViewController: viewController)
