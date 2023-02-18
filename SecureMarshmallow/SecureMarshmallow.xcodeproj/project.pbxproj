@@ -19,6 +19,7 @@
 		0E2C29D22967E75800305639 /* SecureMarshmallow.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E2C29D02967E75800305639 /* SecureMarshmallow.xcdatamodeld */; };
 		0E2C29D42967E75900305639 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C29D32967E75900305639 /* Assets.xcassets */; };
 		0E2C29D72967E75900305639 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E2C29D52967E75900305639 /* LaunchScreen.storyboard */; };
+		0E395B1629A0C546008457F4 /* BaseAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E395B1529A0C546008457F4 /* BaseAP.swift */; };
 		0E3FCA66296CD26600474C83 /* FireLottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E3FCA65296CD26600474C83 /* FireLottie.json */; };
 		0E4C5CBF296D4E93000878DF /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4C5CBE296D4E93000878DF /* Colors.xcassets */; };
 		0E4C5CC3296D4ECC000878DF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C5CC2296D4ECC000878DF /* UIColor+Extension.swift */; };
@@ -60,6 +61,7 @@
 		0E2C29D32967E75900305639 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E2C29D62967E75900305639 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E2C29D82967E75900305639 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E395B1529A0C546008457F4 /* BaseAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAP.swift; sourceTree = "<group>"; };
 		0E3FCA65296CD26600474C83 /* FireLottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FireLottie.json; sourceTree = "<group>"; };
 		0E4C5CBE296D4E93000878DF /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		0E4C5CC2296D4ECC000878DF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			children = (
 				0E813511298D3A4000BFC20E /* BaseNC.swift */,
 				0ED3D000299CC99C007E3A2F /* BaseVC.swift */,
+				0E395B1529A0C546008457F4 /* BaseAP.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				0E4C5CC3296D4ECC000878DF /* UIColor+Extension.swift in Sources */,
 				0E25F9B1298B89A1008D2DE4 /* SettingViewController.swift in Sources */,
 				0ED3D006299CE67E007E3A2F /* UserViewController.swift in Sources */,
+				0E395B1629A0C546008457F4 /* BaseAP.swift in Sources */,
 				0E25F9B7298BAF06008D2DE4 /* SettingPresenter.swift in Sources */,
 				0ED3D00E299DF721007E3A2F /* AddSecretViewController.swift in Sources */,
 				0E25F9A3298A80FB008D2DE4 /* ErrorPresenter.swift in Sources */,
