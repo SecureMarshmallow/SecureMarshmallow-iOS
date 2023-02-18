@@ -24,10 +24,28 @@ class AddPasswordViewController: BaseVC {
             }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        title = "아아아"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .red
+        
+        let saveButton: UIBarButtonItem? = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
+        saveButton?.tintColor = .blue
+        saveButton?.title = "저장"
+        
+        let exitButton: UIBarButtonItem? = UIBarButtonItem(image: nil, style: .plain, target: self, action: #selector(exitButtonDidTap))
+        exitButton?.tintColor = .blue
+        exitButton?.title = "나가기"
+//        exitButton?.image = UIImage(named: "lessthan")
+        
+        self.navigationItem.leftBarButtonItem = exitButton
+        self.navigationItem.rightBarButtonItem = saveButton
         
         view.addSubview(characterButton)
         
@@ -35,5 +53,10 @@ class AddPasswordViewController: BaseVC {
             $0.height.width.equalTo(200)
             $0.centerY.centerX.equalToSuperview()
         }
+    }
+    
+    @objc
+    func exitButtonDidTap() {
+        self.dismiss(animated: true)
     }
 }

@@ -60,9 +60,7 @@ class HomeViewController: BaseVC {
             data.asObservable()
                 .bind(to: self.collectionView.rx
                     .items(cellIdentifier: BlurCell.identifier, cellType: BlurCell.self)
-                ) { index, recommend, cell in
-                    print("BlurCell 데이터불러오기 성공")
-                    
+                ) { index, recommend, cell in                    
                     if index == 0 {
                         cell.text = "메모"
                     } else if index == 1 {

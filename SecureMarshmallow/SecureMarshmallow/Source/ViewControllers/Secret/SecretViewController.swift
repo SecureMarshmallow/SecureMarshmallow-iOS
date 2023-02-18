@@ -51,7 +51,6 @@ class SecretViewController: BaseVC {
             .bind(to: self.collectionView.rx
                 .items(cellIdentifier: SecretCollectionViewCell.identifier, cellType: SecretCollectionViewCell.self)
             ) { index, recommend, cell in
-                print("CharacterCollectionCell 데이터불러오기 성공")
                 cell.layout()
                 
             }.disposed(by: disposeBag)
