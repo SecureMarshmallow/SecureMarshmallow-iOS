@@ -257,7 +257,7 @@
 				0EA0A58029938C7F00652588 /* NumberPasswordViewController.swift */,
 				0EA0A5822993931300652588 /* NumberPasswordCollectionViewCell.swift */,
 			);
-			path = NumberPassword;
+			name = NumberPassword;
 			sourceTree = "<group>";
 		};
 		0E6593FB29A8CF2D0049E1AF /* PatternLockPassword */ = {
