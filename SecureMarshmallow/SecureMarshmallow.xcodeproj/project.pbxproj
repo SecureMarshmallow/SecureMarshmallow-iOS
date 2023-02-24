@@ -25,6 +25,7 @@
 		0E4C5CC3296D4ECC000878DF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4C5CC2296D4ECC000878DF /* UIColor+Extension.swift */; };
 		0E4D5A1F296B8DAB00265762 /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D5A1E296B8DAB00265762 /* TimeInterval+Extension.swift */; };
 		0E4D5A21296B8DDA00265762 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D5A20296B8DDA00265762 /* Int+Extension.swift */; };
+		0E6593FD29A8CF7D0049E1AF /* PattenPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6593FC29A8CF7D0049E1AF /* PattenPasswordViewController.swift */; };
 		0E813512298D3A4000BFC20E /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E813511298D3A4000BFC20E /* BaseNC.swift */; };
 		0E813514298D3B7400BFC20E /* IdInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E813513298D3B7400BFC20E /* IdInformationViewController.swift */; };
 		0EA0A5632991137D00652588 /* CharacterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A5622991137D00652588 /* CharacterSelectionViewController.swift */; };
@@ -67,6 +68,7 @@
 		0E4C5CC2296D4ECC000878DF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		0E4D5A1E296B8DAB00265762 /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
 		0E4D5A20296B8DDA00265762 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		0E6593FC29A8CF7D0049E1AF /* PattenPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PattenPasswordViewController.swift; sourceTree = "<group>"; };
 		0E813511298D3A4000BFC20E /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
 		0E813513298D3B7400BFC20E /* IdInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdInformationViewController.swift; sourceTree = "<group>"; };
 		0EA0A5622991137D00652588 /* CharacterSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				0ED3D015299E20B4007E3A2F /* Secret */,
-				0ED3D004299CE674007E3A2F /* user */,
+				0ED3D004299CE674007E3A2F /* User */,
 				0ED3CFFD299CC988007E3A2F /* Home */,
 				0EA0A57F29938C1700652588 /* Passwords */,
 				0E25F9AF298B879A008D2DE4 /* Setting */,
@@ -249,6 +251,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		0E6593FA29A8CF0F0049E1AF /* NumberPassword */ = {
+			isa = PBXGroup;
+			children = (
+				0EA0A58029938C7F00652588 /* NumberPasswordViewController.swift */,
+				0EA0A5822993931300652588 /* NumberPasswordCollectionViewCell.swift */,
+			);
+			path = NumberPassword;
+			sourceTree = "<group>";
+		};
+		0E6593FB29A8CF2D0049E1AF /* PatternLockPassword */ = {
+			isa = PBXGroup;
+			children = (
+				0E6593FC29A8CF7D0049E1AF /* PattenPasswordViewController.swift */,
+			);
+			path = PatternLockPassword;
+			sourceTree = "<group>";
+		};
 		0E813510298D3A3500BFC20E /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,8 +325,8 @@
 		0EA0A57F29938C1700652588 /* Passwords */ = {
 			isa = PBXGroup;
 			children = (
-				0EA0A58029938C7F00652588 /* NumberPasswordViewController.swift */,
-				0EA0A5822993931300652588 /* NumberPasswordCollectionViewCell.swift */,
+				0E6593FB29A8CF2D0049E1AF /* PatternLockPassword */,
+				0E6593FA29A8CF0F0049E1AF /* NumberPassword */,
 			);
 			path = Passwords;
 			sourceTree = "<group>";
@@ -321,12 +340,12 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		0ED3D004299CE674007E3A2F /* user */ = {
+		0ED3D004299CE674007E3A2F /* User */ = {
 			isa = PBXGroup;
 			children = (
 				0ED3D005299CE67E007E3A2F /* UserViewController.swift */,
 			);
-			path = user;
+			path = User;
 			sourceTree = "<group>";
 		};
 		0ED3D015299E20B4007E3A2F /* Secret */ = {
@@ -507,6 +526,7 @@
 				0E25F9B7298BAF06008D2DE4 /* SettingPresenter.swift in Sources */,
 				0ED3D00E299DF721007E3A2F /* AddSecretViewController.swift in Sources */,
 				0E25F9A3298A80FB008D2DE4 /* ErrorPresenter.swift in Sources */,
+				0E6593FD29A8CF7D0049E1AF /* PattenPasswordViewController.swift in Sources */,
 				0E2C29CC2967E75800305639 /* ErrorViewController.swift in Sources */,
 				0EA0A5832993931300652588 /* NumberPasswordCollectionViewCell.swift in Sources */,
 				0EA0A56D2991234B00652588 /* CharacterCollectionCell.swift in Sources */,

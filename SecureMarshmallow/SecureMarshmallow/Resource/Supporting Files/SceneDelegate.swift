@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let settingViewController = SettingViewController()
         let CharacterSelectionViewController = CharacterSelectionViewController()
         
-        let rootNavigationController = BaseNC(rootViewController: BaseAP())
+        let rootNavigationController = BaseNC(rootViewController: PattenPasswordViewController())
         
         self.window?.rootViewController = rootNavigationController
         self.window?.makeKeyAndVisible()
