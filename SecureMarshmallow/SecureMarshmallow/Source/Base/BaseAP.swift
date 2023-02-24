@@ -6,6 +6,8 @@
 //  Copyright © 2023 SecureMarshmallow. All rights reserved.
 // Base Add Page
 
+// MARK: 메모관련 추가페이지를 조금이라도 편하게 하고자 만든 페이지입니다.
+
 import UIKit
 import Then
 
@@ -77,6 +79,13 @@ class BaseAP: BaseVC {
         $0.backgroundColor = .clear
         $0.layer.borderWidth = 3
         $0.layer.borderColor = UIColor.choiceColor.cgColor
+    }
+    
+    internal lazy var firstLine = UIView().then {
+        $0.backgroundColor = .gray
+    }
+    internal lazy var secondLine = UIView().then {
+        $0.backgroundColor = .gray
     }
     
     func updateWith(_ controller: UIViewController) {
@@ -183,17 +192,14 @@ class BaseAP: BaseVC {
         }
     }
     
-    internal lazy var firstLine = UIView().then {
-        $0.backgroundColor = .gray
-    }
-    internal lazy var secondLine = UIView().then {
-        $0.backgroundColor = .gray
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         updateWith(self)
+        navigationRelated()
+    }
+    
+    func navigationRelated() {
         view.backgroundColor = .black
         title = "title"
         
