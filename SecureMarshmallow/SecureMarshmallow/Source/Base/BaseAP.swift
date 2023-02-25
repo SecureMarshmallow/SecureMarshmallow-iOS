@@ -88,10 +88,24 @@ class BaseAP: BaseVC {
         $0.backgroundColor = .gray
     }
     
+    internal let saveButton: UIBarButtonItem? = UIBarButtonItem(image: nil, style: .plain, target: BaseAP.self, action: nil)
+    
+    internal let exitButton: UIBarButtonItem? = UIBarButtonItem(image: nil, style: .plain, target: BaseAP.self, action: nil)
+    
     func updateWith(_ controller: UIViewController) {
         
         lazy var textFields = [firstTextField, secondTextField]
         let placeholders = ["firstTextField placeholders", "secondTestField placeholders"]
+        
+        view.backgroundColor = .black
+        title = "title"
+        
+        saveButton?.tintColor = .blue
+        saveButton?.title = "저장"
+        exitButton?.tintColor = .blue
+        exitButton?.title = "나가기"
+        self.navigationItem.leftBarButtonItem = exitButton
+        self.navigationItem.rightBarButtonItem = saveButton
         
         var index = 0
         for textField in textFields {
@@ -109,11 +123,11 @@ class BaseAP: BaseVC {
             secondTextField,
             secondLine,
             
-            secondView,
-            secondTitle,
-            relatedImage,
-            iconChoiceButton,
-            urlIconChoiceButton
+//            secondView,
+//            secondTitle,
+//            relatedImage,
+//            iconChoiceButton,
+//            urlIconChoiceButton
         ].forEach { view.addSubview($0) }
         
         let width = controller.view.frame.width / 430.0
@@ -159,61 +173,44 @@ class BaseAP: BaseVC {
             $0.width.equalTo(382)
         }
         
-        secondView.snp.makeConstraints {
-            $0.height.equalTo(20.0)
-            $0.width.equalTo(60.0)
-            $0.top.equalTo(secondLine.snp.bottom).offset(100.0)
-            $0.leading.equalToSuperview().inset(25.0)
-        }
-        
-        secondTitle.snp.makeConstraints {
-            $0.centerX.equalTo(secondView.snp.centerX)
-            $0.centerY.equalTo(secondView.snp.centerY)
-        }
-        
-        relatedImage.snp.makeConstraints {
-            $0.top.equalTo(secondTitle.snp.bottom).offset(15.0)
-            $0.centerX.equalTo(secondView.snp.centerX)
-            $0.width.height.equalTo(36.0)
-        }
-        
-        iconChoiceButton.snp.makeConstraints {
-            $0.top.equalTo(relatedImage.snp.bottom).offset(15.0)
-            $0.leading.equalToSuperview().offset(15.0)
-            $0.height.equalTo(35.0)
-            $0.width.equalTo(175.0)
-        }
-        
-        urlIconChoiceButton.snp.makeConstraints {
-            $0.top.equalTo(iconChoiceButton.snp.top)
-            $0.trailing.equalToSuperview().inset(15.0)
-            $0.height.equalTo(iconChoiceButton.snp.height)
-            $0.width.equalTo(iconChoiceButton.snp.width)
-        }
+//        secondView.snp.makeConstraints {
+//            $0.height.equalTo(20.0)
+//            $0.width.equalTo(60.0)
+//            $0.top.equalTo(secondLine.snp.bottom).offset(100.0)
+//            $0.leading.equalToSuperview().inset(25.0)
+//        }
+//
+//        secondTitle.snp.makeConstraints {
+//            $0.centerX.equalTo(secondView.snp.centerX)
+//            $0.centerY.equalTo(secondView.snp.centerY)
+//        }
+//
+//        relatedImage.snp.makeConstraints {
+//            $0.top.equalTo(secondTitle.snp.bottom).offset(15.0)
+//            $0.centerX.equalTo(secondView.snp.centerX)
+//            $0.width.height.equalTo(36.0)
+//        }
+//
+//        iconChoiceButton.snp.makeConstraints {
+//            $0.top.equalTo(relatedImage.snp.bottom).offset(15.0)
+//            $0.leading.equalToSuperview().offset(15.0)
+//            $0.height.equalTo(35.0)
+//            $0.width.equalTo(175.0)
+//        }
+//
+//        urlIconChoiceButton.snp.makeConstraints {
+//            $0.top.equalTo(iconChoiceButton.snp.top)
+//            $0.trailing.equalToSuperview().inset(15.0)
+//            $0.height.equalTo(iconChoiceButton.snp.height)
+//            $0.width.equalTo(iconChoiceButton.snp.width)
+//        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         updateWith(self)
-        navigationRelated()
     }
-    
-    func navigationRelated() {
-        view.backgroundColor = .black
-        title = "title"
-        
-        let saveButton: UIBarButtonItem? = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
-        saveButton?.tintColor = .blue
-        saveButton?.title = "저장"
-        
-        let exitButton: UIBarButtonItem? = UIBarButtonItem(image: nil, style: .plain, target: self, action: nil)
-        exitButton?.tintColor = .blue
-        exitButton?.title = "나가기"
-        self.navigationItem.leftBarButtonItem = exitButton
-        self.navigationItem.rightBarButtonItem = saveButton
-    }
-    
     func animate(line: UIView) {
         line.alpha = 0.3
         UIView.animate(withDuration: 1) {
