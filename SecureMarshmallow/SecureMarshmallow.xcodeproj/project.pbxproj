@@ -28,6 +28,8 @@
 		0E6593FD29A8CF7D0049E1AF /* PattenPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6593FC29A8CF7D0049E1AF /* PattenPasswordViewController.swift */; };
 		0E813512298D3A4000BFC20E /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E813511298D3A4000BFC20E /* BaseNC.swift */; };
 		0E813514298D3B7400BFC20E /* IdInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E813513298D3B7400BFC20E /* IdInformationViewController.swift */; };
+		0E8865D529AA37F000740577 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8865D429AA37F000740577 /* AddMemoViewController.swift */; };
+		0E8865DD29AA3F8D00740577 /* testCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8865DC29AA3F8D00740577 /* testCollectionViewController.swift */; };
 		0EA0A5632991137D00652588 /* CharacterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A5622991137D00652588 /* CharacterSelectionViewController.swift */; };
 		0EA0A56B2991234100652588 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A56A2991234100652588 /* RadioButton.swift */; };
 		0EA0A56D2991234B00652588 /* CharacterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A56C2991234B00652588 /* CharacterCollectionCell.swift */; };
@@ -71,6 +73,8 @@
 		0E6593FC29A8CF7D0049E1AF /* PattenPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PattenPasswordViewController.swift; sourceTree = "<group>"; };
 		0E813511298D3A4000BFC20E /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
 		0E813513298D3B7400BFC20E /* IdInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdInformationViewController.swift; sourceTree = "<group>"; };
+		0E8865D429AA37F000740577 /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
+		0E8865DC29AA3F8D00740577 /* testCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCollectionViewController.swift; sourceTree = "<group>"; };
 		0EA0A5622991137D00652588 /* CharacterSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewController.swift; sourceTree = "<group>"; };
 		0EA0A56A2991234100652588 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		0EA0A56C2991234B00652588 /* CharacterCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionCell.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				0E25F9AD298A8F0F008D2DE4 /* StoryViewController.swift */,
+				0E8865DC29AA3F8D00740577 /* testCollectionViewController.swift */,
 			);
 			name = test;
 			path = Story;
@@ -364,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				0ED3D017299F9966007E3A2F /* AddPasswordViewController.swift */,
+				0E8865D429AA37F000740577 /* AddMemoViewController.swift */,
 			);
 			path = AddType;
 			sourceTree = "<group>";
@@ -508,6 +514,7 @@
 				0ED3D018299F9966007E3A2F /* AddPasswordViewController.swift in Sources */,
 				0E25F9B5298B9C78008D2DE4 /* SwitchTableViewCell.swift in Sources */,
 				0E25F9AE298A8F0F008D2DE4 /* StoryViewController.swift in Sources */,
+				0E8865DD29AA3F8D00740577 /* testCollectionViewController.swift in Sources */,
 				0E4D5A1F296B8DAB00265762 /* TimeInterval+Extension.swift in Sources */,
 				0ED3D003299CD999007E3A2F /* BlurCell.swift in Sources */,
 				0E4D5A21296B8DDA00265762 /* Int+Extension.swift in Sources */,
@@ -525,6 +532,7 @@
 				0E395B1629A0C546008457F4 /* BaseAP.swift in Sources */,
 				0E25F9B7298BAF06008D2DE4 /* SettingPresenter.swift in Sources */,
 				0ED3D00E299DF721007E3A2F /* AddSecretViewController.swift in Sources */,
+				0E8865D529AA37F000740577 /* AddMemoViewController.swift in Sources */,
 				0E25F9A3298A80FB008D2DE4 /* ErrorPresenter.swift in Sources */,
 				0E6593FD29A8CF7D0049E1AF /* PattenPasswordViewController.swift in Sources */,
 				0E2C29CC2967E75800305639 /* ErrorViewController.swift in Sources */,
@@ -683,6 +691,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -712,6 +721,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
