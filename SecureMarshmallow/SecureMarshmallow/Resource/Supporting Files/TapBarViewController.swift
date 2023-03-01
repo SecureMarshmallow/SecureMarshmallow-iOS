@@ -9,13 +9,13 @@ import UIKit
 import Then
 import SnapKit
 
+@available(iOS 16.0, *)
 class TapBarViewController: UITabBarController {
     private lazy var homeViewController: UINavigationController = {
         let viewController = HomeViewController()
-        let tabBarItem = UITabBarItem(title: "홈", image: UIImage(systemName: "house.fill"), tag: 0)
+        let tabBarItem = UITabBarItem(title: "도원준", image: UIImage(systemName: "house.fill"), tag: 0)
         viewController.tabBarItem = tabBarItem
         let navigationView = UINavigationController(rootViewController: viewController)
-        tabBar.tintColor = .red
         return navigationView
     }()
     

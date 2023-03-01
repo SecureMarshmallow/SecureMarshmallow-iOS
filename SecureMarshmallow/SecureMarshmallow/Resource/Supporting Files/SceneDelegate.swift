@@ -1,5 +1,6 @@
 import UIKit
 
+@available(iOS 16.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -14,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let settingViewController = SettingViewController()
         let CharacterSelectionViewController = CharacterSelectionViewController()
         
-        let rootNavigationController = BaseNC(rootViewController: PattenPasswordViewController())
+        let rootNavigationController = BaseNC(rootViewController: AddPasswordViewController())
         
         self.window?.rootViewController = rootNavigationController
         self.window?.makeKeyAndVisible()

@@ -11,6 +11,7 @@ import RxCocoa
 import Then
 import SnapKit
 
+@available(iOS 16.0, *)
 class SecretViewController: BaseVC {
     
     var array = ["0","1","2","3","4","5","6","7","8","3","3"]
@@ -125,6 +126,7 @@ class SecretViewController: BaseVC {
 }
 
 
+@available(iOS 16.0, *)
 extension SecretViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

@@ -10,6 +10,8 @@ import UIKit
 import SnapKit
 import Then
 
+// MARK: 비밀번호 추가 페이지를 클릭하면 나오는 view 입니다.
+
 class AddPasswordViewController: BaseAP {
     
     internal lazy var passwordTextField = UITextField().then {

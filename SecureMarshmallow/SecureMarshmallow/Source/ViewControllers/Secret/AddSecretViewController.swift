@@ -12,6 +12,7 @@ import RxCocoa
 import Then
 import SnapKit
 
+@available(iOS 16.0, *)
 class AddSecretViewController: BaseVC {
     
     let sectionInsets = UIEdgeInsets(top: 5, left: 25, bottom: 5, right: 25)
@@ -107,6 +108,7 @@ class AddSecretViewController: BaseVC {
     }
 }
 
+@available(iOS 16.0, *)
 extension AddSecretViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -124,9 +126,11 @@ extension AddSecretViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
         
-        let viewController = UINavigationController(rootViewController: AddPasswordViewController())
-                viewController.modalPresentationStyle = .fullScreen
-                self.present(viewController, animated: false)
+        if indexPath.row == 0 {
+            let viewController = UINavigationController(rootViewController: AddPasswordViewController())
+                    viewController.modalPresentationStyle = .fullScreen
+                    self.present(viewController, animated: false)
+        }
         
     }
 }
