@@ -38,10 +38,45 @@ class AddPasswordViewController: BaseAP {
         $0.backgroundColor = .gray
     }
     
+    let placeholder = "메모를 입력해주세요."
+
+    
+    let activityTextView = UITextView().then {
+        $0.font = .systemFont(ofSize: 14)
+        $0.layer.cornerRadius = 10
+        $0.backgroundColor = UIColor.black
+        $0.tintColor = UIColor.choiceColor
+        $0.textContainerInset = UIEdgeInsets(top: 18, left: 18, bottom: 18, right: 18)
+        $0.layer.borderWidth = 1
+        $0.layer.borderColor = UIColor.white.cgColor
+    }
+    
+    let letterNumLabel = UILabel().then {
+        $0.text = "0/150"
+        $0.font = .systemFont(ofSize: 16)
+        $0.textColor = UIColor.gray
+        $0.textAlignment = .right
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         updateWith(self)
+        configUI()
+        setupTextView()
+    }
+    
+    func configUI() {
+        view.backgroundColor = .black
+    }
+
+    func setupTextView() {
+        activityTextView.text = placeholder
+        activityTextView.textColor = UIColor.gray
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     override func updateWith(_ controller: UIViewController) {
@@ -57,6 +92,7 @@ class AddPasswordViewController: BaseAP {
             textField.attributedPlaceholder = NSAttributedString(string: placeholders[index],
                                                                  attributes: attributes)
             textField.delegate = self
+            activityTextView.delegate = self
             index += 1
         }
         
@@ -64,7 +100,9 @@ class AddPasswordViewController: BaseAP {
             passwordTextField,
             passwordLine,
             againPasswordTextField,
-            againPasswordLine
+            againPasswordLine,
+            activityTextView,
+            letterNumLabel
         ].forEach { view.addSubview($0) }
         
         let width = controller.view.frame.width / 430.0
@@ -97,6 +135,18 @@ class AddPasswordViewController: BaseAP {
             $0.height.equalTo(2.0)
             $0.width.equalTo(382)
         }
+        
+        activityTextView.snp.makeConstraints {
+            $0.top.equalTo(againPasswordLine.snp.bottom).offset(55.0)
+            $0.centerX.equalToSuperview()
+            $0.height.equalTo(372)
+            $0.width.equalTo(382)
+        }
+        
+        letterNumLabel.snp.makeConstraints {
+            $0.top.equalTo(activityTextView.snp.bottom).offset(6)
+            $0.trailing.equalToSuperview().inset(28)
+        }
     }
 }
 
@@ -112,6 +162,47 @@ extension AddPasswordViewController {
     }
 }
 
+extension AddPasswordViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        
+        activityTextView.layer.borderWidth = 1
+        activityTextView.layer.borderColor = UIColor.choiceColor.cgColor
+        
+        
+        if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            activityTextView.textColor = UIColor.gray
+            activityTextView.text = placeholder
+        } else if textView.text == placeholder {
+            activityTextView.textColor = UIColor.white
+            activityTextView.text = nil
+        }
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        
+        if activityTextView.text.count > 150 {
+            activityTextView.deleteBackward()
+        }
+        
+        letterNumLabel.text = "\(activityTextView.text.count)/150"
+        
+        let attributedString = NSMutableAttributedString(string: "\(activityTextView.text.count)/150")
+        attributedString.addAttribute(.foregroundColor, value: UIColor.choiceColor, range: ("\(activityTextView.text.count)/150" as NSString).range(of:"\(activityTextView.text.count)"))
+        letterNumLabel.attributedText = attributedString
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        
+        activityTextView.layer.borderWidth = 0
+        
+        if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || textView.text == placeholder {
+            activityTextView.textColor = UIColor.gray
+            activityTextView.text = placeholder
+            letterNumLabel.textColor = UIColor.gray
+            letterNumLabel.text = "0/150"
+        }
+    }
+}
 
 
 
