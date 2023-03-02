@@ -10,12 +10,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
             window = UIWindow(frame: UIScreen.main.bounds)
             window?.windowScene = windowScene
-
-//        let errorViewController = ErrorViewController()
-        let settingViewController = SettingViewController()
-        let CharacterSelectionViewController = CharacterSelectionViewController()
         
-        let rootNavigationController = BaseNC(rootViewController: AddMemoViewController())
+        let rootNavigationController = BaseNC(rootViewController: SettingsViewController())
         
         self.window?.rootViewController = rootNavigationController
         self.window?.makeKeyAndVisible()

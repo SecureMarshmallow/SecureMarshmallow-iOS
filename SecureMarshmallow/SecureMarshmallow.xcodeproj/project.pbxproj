@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1D7C3229B0757900ABFEDD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D7C3129B0757900ABFEDD /* SettingsViewController.swift */; };
+		0E1D7C3429B1672300ABFEDD /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D7C3329B1672300ABFEDD /* SettingsCell.swift */; };
+		0E1D7C3729B1678A00ABFEDD /* SettingsItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D7C3629B1678A00ABFEDD /* SettingsItemType.swift */; };
 		0E25F9A3298A80FB008D2DE4 /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25F9A2298A80FB008D2DE4 /* ErrorPresenter.swift */; };
 		0E25F9AE298A8F0F008D2DE4 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25F9AD298A8F0F008D2DE4 /* StoryViewController.swift */; };
-		0E25F9B1298B89A1008D2DE4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25F9B0298B89A1008D2DE4 /* SettingViewController.swift */; };
-		0E25F9B3298B8C98008D2DE4 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25F9B2298B8C98008D2DE4 /* SettingTableViewCell.swift */; };
-		0E25F9B5298B9C78008D2DE4 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25F9B4298B9C78008D2DE4 /* SwitchTableViewCell.swift */; };
-		0E25F9B7298BAF06008D2DE4 /* SettingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E25F9B6298BAF06008D2DE4 /* SettingPresenter.swift */; };
 		0E2C29C82967E75800305639 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2C29C72967E75800305639 /* AppDelegate.swift */; };
 		0E2C29CA2967E75800305639 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2C29C92967E75800305639 /* SceneDelegate.swift */; };
 		0E2C29CC2967E75800305639 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2C29CB2967E75800305639 /* ErrorViewController.swift */; };
@@ -27,9 +26,7 @@
 		0E4D5A21296B8DDA00265762 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4D5A20296B8DDA00265762 /* Int+Extension.swift */; };
 		0E6593FD29A8CF7D0049E1AF /* PattenPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6593FC29A8CF7D0049E1AF /* PattenPasswordViewController.swift */; };
 		0E813512298D3A4000BFC20E /* BaseNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E813511298D3A4000BFC20E /* BaseNC.swift */; };
-		0E813514298D3B7400BFC20E /* IdInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E813513298D3B7400BFC20E /* IdInformationViewController.swift */; };
 		0E8865D529AA37F000740577 /* AddMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8865D429AA37F000740577 /* AddMemoViewController.swift */; };
-		0E8865DD29AA3F8D00740577 /* testCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8865DC29AA3F8D00740577 /* testCollectionViewController.swift */; };
 		0EA0A5632991137D00652588 /* CharacterSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A5622991137D00652588 /* CharacterSelectionViewController.swift */; };
 		0EA0A56B2991234100652588 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A56A2991234100652588 /* RadioButton.swift */; };
 		0EA0A56D2991234B00652588 /* CharacterCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A56C2991234B00652588 /* CharacterCollectionCell.swift */; };
@@ -50,12 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E1D7C3129B0757900ABFEDD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		0E1D7C3329B1672300ABFEDD /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		0E1D7C3629B1678A00ABFEDD /* SettingsItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemType.swift; sourceTree = "<group>"; };
 		0E25F9A2298A80FB008D2DE4 /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
 		0E25F9AD298A8F0F008D2DE4 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
-		0E25F9B0298B89A1008D2DE4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		0E25F9B2298B8C98008D2DE4 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
-		0E25F9B4298B9C78008D2DE4 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
-		0E25F9B6298BAF06008D2DE4 /* SettingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPresenter.swift; sourceTree = "<group>"; };
 		0E2C29C42967E75800305639 /* SecureMarshmallow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureMarshmallow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2C29C72967E75800305639 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E2C29C92967E75800305639 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,9 +68,7 @@
 		0E4D5A20296B8DDA00265762 /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
 		0E6593FC29A8CF7D0049E1AF /* PattenPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PattenPasswordViewController.swift; sourceTree = "<group>"; };
 		0E813511298D3A4000BFC20E /* BaseNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNC.swift; sourceTree = "<group>"; };
-		0E813513298D3B7400BFC20E /* IdInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdInformationViewController.swift; sourceTree = "<group>"; };
 		0E8865D429AA37F000740577 /* AddMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoViewController.swift; sourceTree = "<group>"; };
-		0E8865DC29AA3F8D00740577 /* testCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCollectionViewController.swift; sourceTree = "<group>"; };
 		0EA0A5622991137D00652588 /* CharacterSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewController.swift; sourceTree = "<group>"; };
 		0EA0A56A2991234100652588 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		0EA0A56C2991234B00652588 /* CharacterCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionCell.swift; sourceTree = "<group>"; };
@@ -186,7 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				0E25F9AD298A8F0F008D2DE4 /* StoryViewController.swift */,
-				0E8865DC29AA3F8D00740577 /* testCollectionViewController.swift */,
 			);
 			name = test;
 			path = Story;
@@ -195,9 +188,7 @@
 		0E25F9AF298B879A008D2DE4 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				0E25F9B4298B9C78008D2DE4 /* SwitchTableViewCell.swift */,
 				0E813515298D3B8300BFC20E /* Main */,
-				0E813516298D3B9C00BFC20E /* Idinformation */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -286,19 +277,11 @@
 		0E813515298D3B8300BFC20E /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				0E25F9B0298B89A1008D2DE4 /* SettingViewController.swift */,
-				0E25F9B6298BAF06008D2DE4 /* SettingPresenter.swift */,
-				0E25F9B2298B8C98008D2DE4 /* SettingTableViewCell.swift */,
+				0E1D7C3129B0757900ABFEDD /* SettingsViewController.swift */,
+				0E1D7C3629B1678A00ABFEDD /* SettingsItemType.swift */,
+				0E1D7C3329B1672300ABFEDD /* SettingsCell.swift */,
 			);
 			name = Main;
-			sourceTree = "<group>";
-		};
-		0E813516298D3B9C00BFC20E /* Idinformation */ = {
-			isa = PBXGroup;
-			children = (
-				0E813513298D3B7400BFC20E /* IdInformationViewController.swift */,
-			);
-			name = Idinformation;
 			sourceTree = "<group>";
 		};
 		0EA0A5702992349E00652588 /* CharacterCustom */ = {
@@ -509,12 +492,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E25F9B3298B8C98008D2DE4 /* SettingTableViewCell.swift in Sources */,
 				0EA0A58129938C7F00652588 /* NumberPasswordViewController.swift in Sources */,
 				0ED3D018299F9966007E3A2F /* AddPasswordViewController.swift in Sources */,
-				0E25F9B5298B9C78008D2DE4 /* SwitchTableViewCell.swift in Sources */,
 				0E25F9AE298A8F0F008D2DE4 /* StoryViewController.swift in Sources */,
-				0E8865DD29AA3F8D00740577 /* testCollectionViewController.swift in Sources */,
 				0E4D5A1F296B8DAB00265762 /* TimeInterval+Extension.swift in Sources */,
 				0ED3D003299CD999007E3A2F /* BlurCell.swift in Sources */,
 				0E4D5A21296B8DDA00265762 /* Int+Extension.swift in Sources */,
@@ -527,21 +507,21 @@
 				0EA0A57929924AB500652588 /* CompleteViewController.swift in Sources */,
 				0E2C29D22967E75800305639 /* SecureMarshmallow.xcdatamodeld in Sources */,
 				0E4C5CC3296D4ECC000878DF /* UIColor+Extension.swift in Sources */,
-				0E25F9B1298B89A1008D2DE4 /* SettingViewController.swift in Sources */,
 				0ED3D006299CE67E007E3A2F /* UserViewController.swift in Sources */,
 				0E395B1629A0C546008457F4 /* BaseAP.swift in Sources */,
-				0E25F9B7298BAF06008D2DE4 /* SettingPresenter.swift in Sources */,
+				0E1D7C3229B0757900ABFEDD /* SettingsViewController.swift in Sources */,
 				0ED3D00E299DF721007E3A2F /* AddSecretViewController.swift in Sources */,
+				0E1D7C3729B1678A00ABFEDD /* SettingsItemType.swift in Sources */,
 				0E8865D529AA37F000740577 /* AddMemoViewController.swift in Sources */,
 				0E25F9A3298A80FB008D2DE4 /* ErrorPresenter.swift in Sources */,
 				0E6593FD29A8CF7D0049E1AF /* PattenPasswordViewController.swift in Sources */,
 				0E2C29CC2967E75800305639 /* ErrorViewController.swift in Sources */,
 				0EA0A5832993931300652588 /* NumberPasswordCollectionViewCell.swift in Sources */,
+				0E1D7C3429B1672300ABFEDD /* SettingsCell.swift in Sources */,
 				0EA0A56D2991234B00652588 /* CharacterCollectionCell.swift in Sources */,
 				0ED3D001299CC99C007E3A2F /* BaseVC.swift in Sources */,
 				0ED3CFF8299CBEFD007E3A2F /* TapBarViewController.swift in Sources */,
 				0E2C29C82967E75800305639 /* AppDelegate.swift in Sources */,
-				0E813514298D3B7400BFC20E /* IdInformationViewController.swift in Sources */,
 				0ED3D014299E1B93007E3A2F /* SecretCollectionViewCell.swift in Sources */,
 				0E2C29CA2967E75800305639 /* SceneDelegate.swift in Sources */,
 			);
