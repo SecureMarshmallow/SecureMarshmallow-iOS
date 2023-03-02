@@ -125,13 +125,18 @@ extension AddSecretViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
-        
+                
         if indexPath.row == 0 {
             let viewController = UINavigationController(rootViewController: AddPasswordViewController())
                     viewController.modalPresentationStyle = .fullScreen
                     self.present(viewController, animated: false)
         }
         
+        if indexPath.row == 1 {
+            let viewController = UINavigationController(rootViewController: AddMemoViewController())
+                    viewController.modalPresentationStyle = .fullScreen
+                    self.present(viewController, animated: false)
+        }
     }
 }
 
