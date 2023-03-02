@@ -14,6 +14,8 @@ import Then
 
 class AddPasswordViewController: BaseAP {
     
+    let placeholder = "메모를 입력해주세요."
+    
     internal lazy var passwordTextField = UITextField().then {
         $0.borderStyle = UITextField.BorderStyle.none
         $0.returnKeyType = UIReturnKeyType.done
@@ -37,9 +39,6 @@ class AddPasswordViewController: BaseAP {
     internal lazy var againPasswordLine = UIView().then {
         $0.backgroundColor = .gray
     }
-    
-    let placeholder = "메모를 입력해주세요."
-
     
     let activityTextView = UITextView().then {
         $0.font = .systemFont(ofSize: 14)
@@ -95,6 +94,12 @@ class AddPasswordViewController: BaseAP {
             activityTextView.delegate = self
             index += 1
         }
+         
+        exitButton!.rx.tap
+            .bind {
+                self.dismiss(animated: true)
+                print("나감")
+            }.disposed(by: disposeBag)
         
         [
             passwordTextField,
@@ -176,6 +181,7 @@ extension AddPasswordViewController: UITextViewDelegate {
             activityTextView.textColor = UIColor.white
             activityTextView.text = nil
         }
+        
     }
     
     func textViewDidChange(_ textView: UITextView) {

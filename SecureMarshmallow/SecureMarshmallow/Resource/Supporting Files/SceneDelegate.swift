@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let settingViewController = SettingViewController()
         let CharacterSelectionViewController = CharacterSelectionViewController()
         
-        let rootNavigationController = BaseNC(rootViewController: AddPasswordViewController())
+        let rootNavigationController = BaseNC(rootViewController: TapBarViewController())
         
         self.window?.rootViewController = rootNavigationController
         self.window?.makeKeyAndVisible()
