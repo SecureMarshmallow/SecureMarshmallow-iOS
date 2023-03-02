@@ -41,12 +41,15 @@ class SettingsViewController: UIViewController {
         ])
     }
     private func configureSettingsItems() {
-        let section1 = [SettingsItem(type: .account),
-                        SettingsItem(type: .notification, hasSwitch: true, switchState: true)]
-        let section2 = [SettingsItem(type: .help),
-                        SettingsItem(type: .about)]
-        let section3 = [SettingsItem(type: .logout)]
-        settingsItems = [section1, section2, section3]
+//        let section1 = [SettingsItem(type: .account),
+//                        SettingsItem(type: .notification, hasSwitch: true, switchState: true)]
+        let section1 = [SettingsItem(type: .gmailInformation),
+                        SettingsItem(type: .idInformation)]
+        let section2 = [SettingsItem(type: .intrusionInformation),
+                        SettingsItem(type: .appPassword),
+                        SettingsItem(type: .changeAppIcon)]
+//        let section3 = [SettingsItem(type: .appTracking)]
+        settingsItems = [section1, section2]
     }
 }
 
@@ -92,22 +95,24 @@ extension SettingsViewController: UITableViewDelegate {
         
         let item = settingsItems[indexPath.section][indexPath.row]
         switch item.type {
-        case .about:
-            // Handle about action
+        case .gmailInformation:
+            print("gmail")
             break
-        case .account:
+        case .idInformation:
             // Handle account action
             break
-        case .help:
+        case .intrusionInformation:
             // Handle help action
             break
-        case .notification:
+        case .appPassword:
             // Handle notification switch action
             break
-        case .logout:
+        case .appTracking:
             // Handle logout action
             print("로그아웃")
             break
+        case .changeAppIcon:
+            print("앱 아이콘 변경")
         }
     }
 }

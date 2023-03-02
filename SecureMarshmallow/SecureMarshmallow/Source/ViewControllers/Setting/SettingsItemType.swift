@@ -9,38 +9,43 @@
 import UIKit
 
 enum SettingsItemType {
-    case about
-    case account
-    case notification
-    case help
-    case logout
+    case gmailInformation
+    case idInformation
+    case appPassword
+    case intrusionInformation
+    case appTracking
+    case changeAppIcon
     
     var title: String {
         switch self {
-        case .about:
-            return "About"
-        case .account:
-            return "Account"
-        case .notification:
-            return "Notifications"
-        case .help:
-            return "Help"
-        case .logout:
-            return "Log out"
+        case .gmailInformation:
+            return "gmail 정보"
+        case .idInformation:
+            return "아이디 정보"
+        case .appPassword:
+            return "앱 비밀번호"
+        case .intrusionInformation:
+            return "침입 시도"
+        case .appTracking:
+            return "앱 열기 추적"
+        case .changeAppIcon:
+            return "앱 아이콘 변경"
         }
     }
     
     var icon: UIImage? {
         switch self {
-        case .about:
+        case .gmailInformation:
             return UIImage(systemName: "info.circle")
-        case .account:
+        case .idInformation:
             return UIImage(systemName: "person.circle")
-        case .notification:
+        case .appPassword:
             return UIImage(systemName: "bell.circle")
-        case .help:
+        case .intrusionInformation:
             return UIImage(systemName: "questionmark.circle")
-        case .logout:
+        case .appTracking:
+            return UIImage(systemName: "arrow.left.square")
+        case .changeAppIcon:
             return UIImage(systemName: "arrow.left.square")
         }
     }
