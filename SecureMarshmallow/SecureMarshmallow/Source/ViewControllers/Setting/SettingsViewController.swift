@@ -29,7 +29,7 @@ class SettingsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(SettingsCell.self, forCellReuseIdentifier: SettingsCell.reuseIdentifier)
-        tableView.sectionHeaderHeight = 50
+        tableView.sectionHeaderHeight = 10 // 간격 설정
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
@@ -71,20 +71,20 @@ extension SettingsViewController: UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView()
-        headerView.backgroundColor = .systemGroupedBackground
-        
-        let titleLabel = UILabel()
-        titleLabel.font = .systemFont(ofSize: 22, weight: .medium)
-        titleLabel.text = section == 0 ? "ACCOUNT" : (section == 1 ? "HELP" : "LOG OUT")
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        headerView.addSubview(titleLabel)
-        titleLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 16).isActive = true
-        titleLabel.centerYAnchor.constraint(equalTo: headerView.centerYAnchor).isActive = true
-        
-        return headerView
-    }
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerView = UIView()
+//        headerView.backgroundColor = .systemGroupedBackground
+//
+//        let titleLabel = UILabel()
+//        titleLabel.font = .systemFont(ofSize: 22, weight: .medium)
+//        titleLabel.text = section == 0 ? "ACCOUNT" : (section == 1 ? "HELP" : "LOG OUT")
+//        titleLabel.translatesAutoresizingMaskIntoConstraints = false
+//        headerView.addSubview(titleLabel)
+//        titleLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 16).isActive = true
+//        titleLabel.centerYAnchor.constraint(equalTo: headerView.centerYAnchor).isActive = true
+//
+//        return headerView
+//    }
 }
 
 // MARK: - UITableViewDelegate
