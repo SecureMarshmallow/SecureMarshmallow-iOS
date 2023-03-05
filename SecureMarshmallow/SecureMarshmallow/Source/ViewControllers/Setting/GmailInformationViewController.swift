@@ -18,6 +18,7 @@ class GmailInformationViewController: UIViewController {
     
     private func configureUI() {
         view.backgroundColor = .systemBackground
+        title = "gmail 정보"
     }
     
     private func configureTableView() {
