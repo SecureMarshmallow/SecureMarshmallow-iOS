@@ -4,10 +4,13 @@ import Then
 
 class GmailInformationViewController: UIViewController {
     
+    //tableView를 선언해줍니다.
     private let tableView = UITableView(frame: .zero, style: .grouped)
     
+    //사전에 만든 gamilItems을 배열로 받아옵니다.
     private var gamilItems: [[GmailItem]] = []
     
+    //view 생명주기의 한부분으로 메모리에 로드되고 난 후 호출됩니다.
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -16,11 +19,13 @@ class GmailInformationViewController: UIViewController {
         configureSettingsItems()
     }
     
+    //configureUI는 잡동산이를 처리합니다.
     private func configureUI() {
         view.backgroundColor = .systemBackground
         title = "gmail 정보"
     }
     
+    //configureTableView는 tableView를 선언하고 tableView layout과 관련된 일을 합니다.
     private func configureTableView() {
         view.addSubview(tableView)
         
@@ -39,6 +44,7 @@ class GmailInformationViewController: UIViewController {
         
     }
     
+    //configureSettingsItems은 말그대로 GmailItem에 있는 것을 추가해서 tableView에 반영시킵니다.
     private func configureSettingsItems() {
         let section1 = [GmailItem(type: .restoreEmail)]
         let section2 = [GmailItem(type: .deleteAccount)]

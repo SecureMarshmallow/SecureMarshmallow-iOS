@@ -8,6 +8,7 @@
 
 import UIKit
 
+// IdItemType -> IdItem enum으로 받아오는 거에요
 enum IdItemType {
     case IdInformation
     
