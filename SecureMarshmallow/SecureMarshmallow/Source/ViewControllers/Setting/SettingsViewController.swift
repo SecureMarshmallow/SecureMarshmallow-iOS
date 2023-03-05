@@ -123,7 +123,10 @@ extension SettingsViewController: UITableViewDelegate {
             self.navigationController?.pushViewController(gmailVC, animated: true)
             break
         case .idInformation:
-            // Handle account action
+            print("id")
+            let idVC = IdInformationViewController()
+            idVC.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(idVC, animated: true)
             break
         case .intrusionInformation:
             // Handle help action
