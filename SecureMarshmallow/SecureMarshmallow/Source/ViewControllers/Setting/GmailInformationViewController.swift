@@ -1,40 +1,6 @@
-//
-//  GmailInformationViewController.swift
-//  SecureMarshmallow
-//
-//  Created by 박준하 on 2023/03/06.
-//  Copyright © 2023 SecureMarshmallow. All rights reserved.
-//
-
 import UIKit
 import SnapKit
 import Then
-
-enum GmailItemType {
-    case restoreEmail
-    case deleteAccount
-    
-    var title: String {
-        switch self {
-        case .restoreEmail:
-            return "복구 이메일"
-        case .deleteAccount:
-            return "계정 삭제"
-        }
-    }
-}
-
-struct GmailItem {
-    let type: GmailItemType
-    let hasSwitch: Bool
-    let switchState: Bool
-    
-    init(type: GmailItemType, hasSwitch: Bool = false, switchState: Bool = false) {
-        self.type = type
-        self.hasSwitch = hasSwitch
-        self.switchState = switchState
-    }
-}
 
 class GmailInformationViewController: UIViewController {
     
@@ -63,18 +29,17 @@ class GmailInformationViewController: UIViewController {
         tableView.tableFooterView = UIView()
         tableView.separatorStyle = .none
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
-        tableView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-            make.leading.equalTo(view.snp.leading)
-            make.trailing.equalTo(view.snp.trailing)
-            make.bottom.equalTo(view.snp.bottom)
+        tableView.snp.makeConstraints {
+            $0.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            $0.leading.equalTo(view.snp.leading)
+            $0.trailing.equalTo(view.snp.trailing)
+            $0.bottom.equalTo(view.snp.bottom)
         }
         
     }
     
     private func configureSettingsItems() {
         let section1 = [GmailItem(type: .restoreEmail)]
-        
         let section2 = [GmailItem(type: .deleteAccount)]
         
         gamilItems = [section1, section2]

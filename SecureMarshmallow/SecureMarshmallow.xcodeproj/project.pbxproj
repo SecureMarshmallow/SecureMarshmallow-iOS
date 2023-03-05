@@ -35,6 +35,7 @@
 		0EA0A5832993931300652588 /* NumberPasswordCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA0A5822993931300652588 /* NumberPasswordCollectionViewCell.swift */; };
 		0EBAEE9129B511EE00A0B39E /* GmailInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBAEE9029B511EE00A0B39E /* GmailInformationViewController.swift */; };
 		0EBAEE9329B514DE00A0B39E /* GmailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBAEE9229B514DE00A0B39E /* GmailCell.swift */; };
+		0EBAEE9529B516FE00A0B39E /* GmailItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBAEE9429B516FE00A0B39E /* GmailItemType.swift */; };
 		0ED3CFF8299CBEFD007E3A2F /* TapBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3CFF7299CBEFD007E3A2F /* TapBarViewController.swift */; };
 		0ED3CFFF299CC995007E3A2F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3CFFE299CC995007E3A2F /* HomeViewController.swift */; };
 		0ED3D001299CC99C007E3A2F /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED3D000299CC99C007E3A2F /* BaseVC.swift */; };
@@ -79,6 +80,7 @@
 		0EA0A5822993931300652588 /* NumberPasswordCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPasswordCollectionViewCell.swift; sourceTree = "<group>"; };
 		0EBAEE9029B511EE00A0B39E /* GmailInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailInformationViewController.swift; sourceTree = "<group>"; };
 		0EBAEE9229B514DE00A0B39E /* GmailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailCell.swift; sourceTree = "<group>"; };
+		0EBAEE9429B516FE00A0B39E /* GmailItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailItemType.swift; sourceTree = "<group>"; };
 		0ED3CFF7299CBEFD007E3A2F /* TapBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapBarViewController.swift; sourceTree = "<group>"; };
 		0ED3CFFE299CC995007E3A2F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0ED3D000299CC99C007E3A2F /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				0EBAEE9029B511EE00A0B39E /* GmailInformationViewController.swift */,
+				0EBAEE9429B516FE00A0B39E /* GmailItemType.swift */,
 				0EBAEE9229B514DE00A0B39E /* GmailCell.swift */,
 			);
 			name = gmail;
@@ -519,6 +522,7 @@
 				0E813512298D3A4000BFC20E /* BaseNC.swift in Sources */,
 				0ED3D008299DEF21007E3A2F /* SecretViewController.swift in Sources */,
 				0EA0A57929924AB500652588 /* CompleteViewController.swift in Sources */,
+				0EBAEE9529B516FE00A0B39E /* GmailItemType.swift in Sources */,
 				0E2C29D22967E75800305639 /* SecureMarshmallow.xcdatamodeld in Sources */,
 				0E4C5CC3296D4ECC000878DF /* UIColor+Extension.swift in Sources */,
 				0ED3D006299CE67E007E3A2F /* UserViewController.swift in Sources */,
