@@ -7,24 +7,22 @@
 //
 
 import UIKit
+import Then
+import SnapKit
 
 class GmailCell: UITableViewCell {
     
     static let reuseIdentifier = "GmailCell"
     
-    private let iconImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = .systemBlue
-        return imageView
-    }()
+    private let iconImageView = UIImageView().then {
+        $0.contentMode = .scaleAspectFit
+        $0.tintColor = .systemBlue
+    }
     
-    internal let titleLabel: UILabel = {
-        let label = UILabel()
-        label.numberOfLines = 1
-        label.font = .systemFont(ofSize: 18, weight: .regular)
-        return label
-    }()
+    internal let titleLabel = UILabel().then {
+        $0.numberOfLines = 1
+        $0.font = .systemFont(ofSize: 18, weight: .regular)
+    }
     
     private let switchControl: UISwitch = {
         let switchControl = UISwitch()
