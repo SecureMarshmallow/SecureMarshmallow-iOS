@@ -6,23 +6,23 @@ class SettingsViewController: UIViewController {
 
     private let tableView = UITableView(frame: .zero, style: .grouped)
     private var settingsItems: [[SettingsItem]] = []
-    
+
     // MARK: - Lifecycle
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
         configureTableView()
         configureSettingsItems()
     }
-    
+
     // MARK: - Helpers
-    
+
     private func configureUI() {
         view.backgroundColor = .systemBackground
 //        title = "Settings"
     }
-    
+
     private func configureTableView() {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -47,19 +47,19 @@ class SettingsViewController: UIViewController {
         let section2 = [SettingsItem(type: .appPassword),
                         SettingsItem(type: .intrusionInformation),
                         SettingsItem(type: .appTracking)]
-        
+
         let section3 = [SettingsItem(type: .changeAppIcon),
                         SettingsItem(type: .changeAppTheme)]
-        
+
         let section4 = [SettingsItem(type: .help),
                         SettingsItem(type: .bugReport)]
-        
+
         let section5 = [SettingsItem(type: .feedback)]
-        
+
         let section6 = [SettingsItem(type: .appShare),
                         SettingsItem(type: .privacyPolicy),
                         SettingsItem(type: .termsofUse)]
-        
+
         let section7 = [SettingsItem(type: .howToUse),
                         SettingsItem(type: .developerIformation)]
 //        let section3 = [SettingsItem(type: .appTracking)]
@@ -70,22 +70,22 @@ class SettingsViewController: UIViewController {
 // MARK: - UITableViewDataSource
 
 extension SettingsViewController: UITableViewDataSource {
-    
+
     // 각 섹션의 footer 뷰 설정
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
     }
-    
+
     //색션의 개수
     func numberOfSections(in tableView: UITableView) -> Int {
         return settingsItems.count
     }
-    
+
     //cell의 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return settingsItems[section].count
     }
-    
+
     //cell의 특징
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SettingsCell.reuseIdentifier, for: indexPath) as! SettingsCell
@@ -99,21 +99,21 @@ extension SettingsViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 
 extension SettingsViewController: UITableViewDelegate {
-    
+
     //cell의 간격
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 30
     }
-    
+
     // 셀 높이 설정
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
-    
+
     //cell을 클릭했을 경우
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        
+
         let item = settingsItems[indexPath.section][indexPath.row]
         switch item.type {
         case .gmailInformation:
