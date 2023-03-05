@@ -8,6 +8,7 @@
 
 import UIKit
 
+// SettingsItemType -> SettingsItem enum으로 받아오는 거에요
 enum SettingsItemType {
     case gmailInformation // gmail 정보
     case idInformation // 아이디 정보

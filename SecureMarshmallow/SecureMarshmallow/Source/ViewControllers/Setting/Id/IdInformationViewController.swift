@@ -1,11 +1,3 @@
-//
-//  IdInformation.swift
-//  SecureMarshmallow
-//
-//  Created by 박준하 on 2023/03/06.
-//  Copyright © 2023 SecureMarshmallow. All rights reserved.
-//
-
 import UIKit
 import SnapKit
 import Then
