@@ -1,14 +1,7 @@
-//
-//  CharacterCell.swift
-//  Pods
-//
-//  Created by 박준하 on 2023/02/06.
-//
-
 import UIKit
 import SnapKit
 
-// Cell
+// cell의 테두리를 정하는 것인데 추후에 깔끔하게 돌아오겠습니다.
 class CharacterCollectionCell: UICollectionViewCell {
     
     static let identifier = "CharacterCollectionCell"
